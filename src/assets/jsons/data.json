@@ -5,45 +5,110 @@
             "url": "https://www.youtube.com/watch?v=8LHEwkV7QpY",
             "imgSrc": "/assets/images/video-1.webp",
             "channelName": "Micode",
+            "likes": 12000,
+            "comments": [
+                {
+                    "author": "Jean Dupont",
+                    "content": "Super vidéo, merci pour les conseils !"
+                },
+                {
+                    "author": "Marie Martin",
+                    "content": "Je suis d'accord avec Jean, c'est très intéressant !"
+                },
+                {
+                    "author": "Pierre Durand",
+                    "content": "Merci pour cette vidéo, je vais essayer de suivre tes conseils !"
+                }
+            ],
             "nbViews": "1,2M vues",
-            "date": "2024-02-10",
-            "categories": ["Informatique", "Internet"]
+            "uploadDate": "2024-02-10",
+            "categories": [
+                "Informatique",
+                "Internet"
+            ]
         },
         {
             "title": "Lane 8 - Spring 2024 Mixtape",
             "url": "https://www.youtube.com/watch?v=X6IgppEPuq4",
             "imgSrc": "/assets/images/video-2.webp",
+            "likes": 3400,
+            "comments": [
+                {
+                    "author": "Jeanne Dupont",
+                    "content": "J'adore cette musique, merci pour le partage !"
+                },
+                {
+                    "author": "Marie Martin",
+                    "content": "Je suis d'accord avec Jeanne, c'est une super mixtape !"
+                }
+            ],
             "channelName": "This Never Happened",
             "nbViews": "212k vues",
-            "date": "2022-05-02",
-            "categories": ["Musique", "Electro"]
+            "uploadDate": "2022-05-02",
+            "categories": [
+                "Musique",
+                "Electro"
+            ]
         },
         {
             "title": "HOT ONES : Ahmed Sylla boit les sauces direct à la bouteille",
             "url": "https://www.youtube.com/watch?v=tYUT3GsNwXI",
+            "likes": 1100,
+            "comments": [
+                {
+                    "author": "Jean Dupont",
+                    "content": "Super vidéo, j'ai bien rigolé !"
+                },
+                {
+                    "author": "Marie Martin",
+                    "content": "Je suis d'accord avec Jean, c'est très drôle !"
+                },
+                {
+                    "author": "Pierre Durand",
+                    "content": "Merci pour cette vidéo, je vais la montrer à mes amis !"
+                }
+            ],
             "imgSrc": "/assets/images/video-3.webp",
             "channelName": "Studio Bagel",
             "nbViews": "652k vues",
-            "date": "2025-06-03",
-            "categories": ["Humour", "Cuisine"]
+            "uploadDate": "2025-06-03",
+            "categories": [
+                "Humour",
+                "Cuisine"
+            ]
         },
         {
             "title": "Zerator : Entreprendre, Innover, Fédérer",
             "url": "https://www.youtube.com/watch?v=9VXqW_Ka8Jg",
+            "likes": 50000,
+            "comments": [],
             "imgSrc": "/assets/images/video-4.webp",
             "channelName": "Jokariz",
             "nbViews": "42k vues",
-            "date": "2024-04-23",
-            "categories": ["Gaming", "Entrepreneuriat"]
+            "uploadDate": "2024-04-23",
+            "categories": [
+                "Gaming",
+                "Entrepreneuriat"
+            ]
         },
         {
             "title": "PHILIPPE BOXHO, MÉDECIN LÉGISTE (PARTIE 2) : IL REVIENT SUR LES DÉCÈS LES PLUS INSOLITES QU'IL A VUS",
             "url": "https://www.youtube.com/watch?v=DLgZvoA5yUY",
+            "likes": 727,
+            "comments": [
+                {
+                    "author": "Pierre Durand",
+                    "content": "Merci pour cette vidéo, je vais la montrer à mes amis !"
+                }
+            ],
             "imgSrc": "/assets/images/video-5.webp",
             "channelName": "LEGEND",
             "nbViews": "3,4M vues",
-            "date": "2024-01-01",
-            "categories": ["Documentaire", "Médecine"]
+            "uploadDate": "2024-01-01",
+            "categories": [
+                "Documentaire",
+                "Médecine"
+            ]
         }
     ]
 }
