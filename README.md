@@ -41,7 +41,6 @@ Ton objectif est de refaire une partie de la page d'accueil de youtube grâce à
 👉 Continue en récupérant les données :
 
 - Depuis ton composant `video-list`, récupère les données de ton fichier `data.json` par l'intermédiaire de ton service et ta méthode `getVideoList$`. Tu peux te `subscribe` à cette méthode via le `| async` directement depuis le template
-- Crée un composant `video-card`
 - Ton composant `video-list` transmet les vidéos à ton composant `video-card` via `@Input()` et `*ngFor`
 - Ton composant `video-card` doit afficher les éléments principaux d'une vidéo (à toi de juger lesquels sont pertinents)
 
@@ -82,7 +81,7 @@ Ton objectif final est de filtrer la liste de vidéos de ton composant `video-li
 
 Pour filtrer ta liste de vidéos, tu vas devoir créer un composant `video-search`. Ce composant :
 
-- Possède un input de type search et récupère la donnée saisie par l'utilisateur via la directive `([ngModel])`
+- Possède un input de type search et récupère la donnée saisie par l'utilisateur via la directive `[(ngModel)]`
 
 - Envoie cette donnée à son parent `video-page` via `@Output` à chaque fois que la valeur est modifiée. Tu pourras utiliser `(ngModelChange)` pour écouter les changements du `[(ngModel)]`
 
