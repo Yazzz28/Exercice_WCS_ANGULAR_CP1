@@ -14,8 +14,11 @@ export class VideoService {
 
   // Récupère la liste complète des vidéos
   public getVideoList$(): Observable<Video[]> {
-    return this.http.get<Video[]>(this.dataUrl);
+    return this.http.get<{ videos: Video[] }>(this.dataUrl).pipe(
+      map(response => response.videos)
+    );
   }
+  
 
   // Récupère une vidéo par ID
   public getVideoById$(id: number): Observable<Video | undefined> {

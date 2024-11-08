@@ -1,1 +1,8 @@
-<p>video-list works!</p>
+<div class="video-list">
+@for (video of videoList; track $index) {
+<app-video-card
+[video]="video"
+>
+</app-video-card>
+}
+</div>

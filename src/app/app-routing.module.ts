@@ -4,7 +4,7 @@ import { VideosComponent } from './component/videos/videos.component';
 import { ErrorComponent } from './component/error/error.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/videos', pathMatch: 'full' },
+  { path: '', redirectTo: 'videos', pathMatch: 'full' },
   { path: 'videos', component: VideosComponent },
   { path: '**', component: ErrorComponent }	
 ];
