@@ -1,2 +1,8 @@
-<app-video-search></app-video-search>
-<app-video-list></app-video-list>
+<div class="video-page">
+    <!-- Passer l'événement de searchTermChange au parent -->
+    <app-video-search (searchTermChange)="onSearchTermChange($event)"></app-video-search>
+  
+    <!-- Passer searchTerm à video-list -->
+    <app-video-list [searchTerm]="searchTerm"></app-video-list>
+  </div>
+  

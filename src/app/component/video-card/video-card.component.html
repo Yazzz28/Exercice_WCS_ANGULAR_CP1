@@ -1,13 +1,19 @@
 <div class="video-card" *ngIf="video">
-    <div class="thumbnail">
-      <img [src]="video.imgSrc" [alt]="video.title" />
-    </div>
-    <div class="video-details">
-      <div class="video-info">
-        <h3 class="video-title">{{ video.title }}</h3>
-        <p class="channel-name">{{ video.channelName }}</p>
-        <p class="views">{{ video.nbViews }} • {{ video.uploadDate | date: 'dd MMM yyyy' }}</p>
-      </div>
+  <div class="thumbnail">
+    <img [src]="video.imgSrc" [alt]="video.title" />
+  </div>
+  <div class="video-details">
+    <div class="video-info">
+      <h3 class="video-title" [ngClass]="{'bold-title': video.likes > 100000}">
+        {{ video.title }}
+      </h3>      
+      <p class="channel-name">{{ video.channelName }}</p>
+      <p class="views">
+        {{ video.nbViews }} • {{ video.uploadDate | date : "dd MMM yyyy" }}
+      </p>
+      <button class="see-more-btn" [routerLink]="['/video', video.id]">
+        Voir plus
+      </button>
     </div>
   </div>
-  
+</div>

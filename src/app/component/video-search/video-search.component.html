@@ -1,1 +1,14 @@
-<p>video-search works!</p>
+<div class="video-search">
+  <div class="search-container">
+    <input 
+      type="search" 
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearchChange()"
+      placeholder="Rechercher une vidéo..."
+      class="search-input"
+    />
+    <button class="search-btn" (click)="onSearchChange()">
+      <i class="search-icon">🔍</i>
+    </button>
+  </div>
+</div>

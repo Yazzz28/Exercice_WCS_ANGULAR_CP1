@@ -1,0 +1,44 @@
+<div class="video-card" *ngIf="video">
+  <div class="thumbnail">
+    <img [src]="video.imgSrc" [alt]="video.title" />
+  </div>
+  <div class="video-details">
+    <div class="video-info">
+      <h3 class="video-title">{{ video.title || 'Titre non disponible' }}</h3>
+      <p class="channel-name">{{ video.channelName || 'Nom du canal non disponible' }}</p>
+      <p class="views">
+        {{ video.nbViews || 'Nombre de vues non disponible' }} • 
+        {{ video.uploadDate ? (video.uploadDate | date: 'dd MMM yyyy') : 'Date de téléchargement non disponible' }}
+      </p>
+      <div class="video-actions">
+        <!-- Bouton d'abonnement -->
+        <button class="subscribe-btn" *ngIf="video.channelName">S'abonner</button>
+        
+        <!-- Likes -->
+        <button class="like-btn" *ngIf="video.likes !== undefined">
+          <span class="like-icon">👍</span> {{ video.likes || 0 }} Likes
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section des commentaires -->
+  <div class="comments-section">
+    <h3>Commentaires</h3>
+    <!-- Si pas de commentaires, affiche un message par défaut -->
+    <div *ngIf="video.comments?.length === 0">
+      <p>Aucun commentaire pour cette vidéo.</p>
+    </div>
+
+    <!-- Affiche chaque commentaire -->
+    <div *ngFor="let comment of video.comments" class="comment">
+      <p class="comment-author"><strong>{{ comment.author || 'Auteur inconnu' }}</strong></p>
+      <p class="comment-text">{{ comment.content || 'Aucun contenu disponible.' }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Loading state, shown if video is not available yet -->
+<div *ngIf="!video" class="loading">
+  Loading...
+</div>

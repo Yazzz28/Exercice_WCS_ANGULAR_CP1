@@ -1,6 +1,7 @@
 {
     "videos": [
         {
+            "id": 1,
             "title": "Comment disparaître d'Internet",
             "url": "https://www.youtube.com/watch?v=8LHEwkV7QpY",
             "imgSrc": "/assets/images/video-1.webp",
@@ -28,6 +29,7 @@
             ]
         },
         {
+            "id": 2,
             "title": "Lane 8 - Spring 2024 Mixtape",
             "url": "https://www.youtube.com/watch?v=X6IgppEPuq4",
             "imgSrc": "/assets/images/video-2.webp",
@@ -51,6 +53,7 @@
             ]
         },
         {
+            "id": 3,
             "title": "HOT ONES : Ahmed Sylla boit les sauces direct à la bouteille",
             "url": "https://www.youtube.com/watch?v=tYUT3GsNwXI",
             "likes": 1100,
@@ -78,6 +81,7 @@
             ]
         },
         {
+            "id": 4,
             "title": "Zerator : Entreprendre, Innover, Fédérer",
             "url": "https://www.youtube.com/watch?v=9VXqW_Ka8Jg",
             "likes": 50000,
@@ -92,6 +96,7 @@
             ]
         },
         {
+            "id": 5,
             "title": "PHILIPPE BOXHO, MÉDECIN LÉGISTE (PARTIE 2) : IL REVIENT SUR LES DÉCÈS LES PLUS INSOLITES QU'IL A VUS",
             "url": "https://www.youtube.com/watch?v=DLgZvoA5yUY",
             "likes": 727,
